@@ -1,6 +1,12 @@
-.highlighted2 {
-  color: var(--orange-color);
+.phone {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0rem;
+  /* border: 1px solid red; */
+  /* align-items: center; */
 }
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -11,6 +17,11 @@
     position: relative;
     overflow: hidden;
   }
+
+  .highlighted {
+    color: var(--orange-color) !important;
+  }
+
 
   .s1-left {
     display: grid;
@@ -75,14 +86,15 @@
     padding: 7%;
   }
 
+
+
   .form {
     display: grid;
-    /* width: 325.5px; */
-    /* width: 70%; */
+    /* width: 330.5px; */
     height: 362px;
     background-color: #FBFBFB;
-    border-radius: 5px;
-    padding: 5%;
+    border-radius: 20px;
+    padding: 10%;
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
@@ -90,7 +102,8 @@
 
   .form-header {
     font-weight: 700;
-    margin: 4% 0;
+    margin: 0% 5%;
+    font-size: 1.3rem;
   }
 
   .small {
@@ -98,11 +111,17 @@
     margin: 5% 15%;
   }
 
-  .radio-div {
+  .split-div-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     text-align: left;
     margin: 0% 0 3% 0;
+  }
+
+  .phone-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .radio {
@@ -117,11 +136,82 @@
     font-weight: 700;
   }
 
-  select {
-    margin-bottom: 15%;
+  .input {
+    margin-bottom: 1%;
     background-color: #fff;
     border: 1px solid#DEDEDE;
     border-radius: 5px;
+    max-width: 100%;
+    min-width: 100%;
+    outline: none;
+    padding-left: 5px;
+  }
+
+  .input[data-chosen] {}
+
+  .input2 {
+    margin-bottom: 1%;
+    background-color: #fff;
+    border: 1px solid#DEDEDE;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px 0px 10px 5px;
+    outline: none;
+  }
+
+  .input3 {
+    margin-bottom: 1%;
+    background-color: #fff;
+    width: 100%;
+    /* padding: 5px; */
+    border-radius: 0;
+    outline: none;
+    padding-left: 5px;
+  }
+
+  select option {
+    color: blue;
+    padding-left: 20px;
+  }
+
+
+  .left-join {
+    border: none;
+    border-left: 1px solid#DEDEDE;
+    border-top: 1px solid#DEDEDE;
+    border-bottom: 1px solid#DEDEDE;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .right-join {
+    border: none;
+    border-right: 1px solid#DEDEDE;
+    border-top: 1px solid#DEDEDE;
+    border-bottom: 1px solid#DEDEDE;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+  }
+
+  .input::placeholder {
+    padding-left: 10%;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .input3::placeholder {
+    padding-left: 10%;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .input2::placeholder {
+    padding-left: 5%;
+    color: #000;
+    font-weight: 500;
   }
 
   .c-btn {
@@ -129,11 +219,19 @@
     color: #fff;
     border: 0;
     border-radius: 5px;
+    margin: 5% 0;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .c-btn:hover {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
   }
 
   /**********************************************************
-    ***********************SECTION 2***************************
-    ***********************************************************/
+      ***********************SECTION 2***************************
+      ***********************************************************/
 
   .section-2 {
     position: relative;
@@ -197,8 +295,8 @@
   }
 
   /**********************************************************
-    ***********************SECTION 3***************************
-    ***********************************************************/
+      ***********************SECTION 3***************************
+      ***********************************************************/
   .section-3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -324,12 +422,11 @@
 
   .form {
     display: grid;
-    /* width: 325.5px; */
-    /* width: 70%; */
+    /* width: 330.5px; */
     height: 362px;
     background-color: #FBFBFB;
-    border-radius: 5px;
-    padding: 5%;
+    border-radius: 20px;
+    padding: 10%;
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
@@ -337,7 +434,8 @@
 
   .form-header {
     font-weight: 700;
-    margin: 4% 0;
+    margin: 0% 5%;
+    font-size: 1.3rem;
   }
 
   .small {
@@ -345,11 +443,17 @@
     margin: 5% 15%;
   }
 
-  .radio-div {
+  .split-div-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     text-align: left;
     margin: 0% 0 3% 0;
+  }
+
+  .phone-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .radio {
@@ -364,11 +468,82 @@
     font-weight: 700;
   }
 
-  select {
-    margin-bottom: 15%;
+  .input {
+    margin-bottom: 1%;
     background-color: #fff;
     border: 1px solid#DEDEDE;
     border-radius: 5px;
+    max-width: 100%;
+    min-width: 100%;
+    outline: none;
+    padding-left: 5px;
+  }
+
+  .input[data-chosen] {}
+
+  .input2 {
+    margin-bottom: 1%;
+    background-color: #fff;
+    border: 1px solid#DEDEDE;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px 0px 10px 5px;
+    outline: none;
+  }
+
+  .input3 {
+    margin-bottom: 1%;
+    background-color: #fff;
+    width: 100%;
+    /* padding: 5px; */
+    border-radius: 0;
+    outline: none;
+    padding-left: 5px;
+  }
+
+  select option {
+    color: blue;
+    padding-left: 20px;
+  }
+
+
+  .left-join {
+    border: none;
+    border-left: 1px solid#DEDEDE;
+    border-top: 1px solid#DEDEDE;
+    border-bottom: 1px solid#DEDEDE;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .right-join {
+    border: none;
+    border-right: 1px solid#DEDEDE;
+    border-top: 1px solid#DEDEDE;
+    border-bottom: 1px solid#DEDEDE;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+  }
+
+  .input::placeholder {
+    padding-left: 10%;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .input3::placeholder {
+    padding-left: 10%;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .input2::placeholder {
+    padding-left: 5%;
+    color: #000;
+    font-weight: 500;
   }
 
   .c-btn {
@@ -376,11 +551,19 @@
     color: #fff;
     border: 0;
     border-radius: 5px;
+    margin: 5% 0;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .c-btn:hover {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
   }
 
   /**********************************************************
-        ***********************SECTION 2***************************
-        ***********************************************************/
+          ***********************SECTION 2***************************
+          ***********************************************************/
 
   .section-2 {
     position: relative;
@@ -444,8 +627,8 @@
   }
 
   /**********************************************************
-        ***********************SECTION 3***************************
-        ***********************************************************/
+          ***********************SECTION 3***************************
+          ***********************************************************/
   .section-3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -473,7 +656,7 @@
   }
 
   .highlighted {
-    color: #38CCF5;
+    color: var(--orange-color);
   }
 
   .benefit {
@@ -584,11 +767,11 @@
 
   .form {
     display: grid;
-    width: 325.5px;
+    width: 330.5px;
     height: 362px;
     background-color: #FBFBFB;
-    border-radius: 5px;
-    padding: 5%;
+    border-radius: 20px;
+    padding: 10%;
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
@@ -596,7 +779,8 @@
 
   .form-header {
     font-weight: 700;
-    margin: 4% 0;
+    margin: 0% 5%;
+    font-size: 1.3rem;
   }
 
   .small {
@@ -604,11 +788,17 @@
     margin: 5% 15%;
   }
 
-  .radio-div {
+  .split-div-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     text-align: left;
     margin: 0% 0 3% 0;
+  }
+
+  .phone-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .radio {
@@ -623,11 +813,82 @@
     font-weight: 700;
   }
 
-  select {
-    margin-bottom: 15%;
+  .input {
+    margin-bottom: 1%;
     background-color: #fff;
     border: 1px solid#DEDEDE;
     border-radius: 5px;
+    max-width: 100%;
+    min-width: 100%;
+    outline: none;
+    padding-left: 5px;
+  }
+
+  .input[data-chosen] {}
+
+  .input2 {
+    margin-bottom: 1%;
+    background-color: #fff;
+    border: 1px solid#DEDEDE;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px 0px 10px 5px;
+    outline: none;
+  }
+
+  .input3 {
+    margin-bottom: 1%;
+    background-color: #fff;
+    width: 100%;
+    /* padding: 5px; */
+    border-radius: 0;
+    outline: none;
+    padding-left: 5px;
+  }
+
+  select option {
+    color: blue;
+    padding-left: 20px;
+  }
+
+
+  .left-join {
+    border: none;
+    border-left: 1px solid#DEDEDE;
+    border-top: 1px solid#DEDEDE;
+    border-bottom: 1px solid#DEDEDE;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .right-join {
+    border: none;
+    border-right: 1px solid#DEDEDE;
+    border-top: 1px solid#DEDEDE;
+    border-bottom: 1px solid#DEDEDE;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+  }
+
+  .input::placeholder {
+    padding-left: 10%;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .input3::placeholder {
+    padding-left: 10%;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .input2::placeholder {
+    padding-left: 5%;
+    color: #000;
+    font-weight: 500;
   }
 
   .c-btn {
@@ -635,13 +896,21 @@
     color: #fff;
     border: 0;
     border-radius: 5px;
+    margin: 5% 0;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .c-btn:hover {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
   }
 
 
 
   /**********************************************************
-    ***********************SECTION 2***************************
-    ***********************************************************/
+      ***********************SECTION 2***************************
+      ***********************************************************/
   .section-2 {
     position: relative;
     background-color: #EEEEEE68;
@@ -660,10 +929,10 @@
   }
 
   /* .s2-icons {
-    position: absolute;
-    right: 5%;
-    top: 30%;
-  } */
+      position: absolute;
+      right: 5%;
+      top: 30%;
+    } */
 
   .s2-fb-icon {
     position: absolute;
@@ -729,8 +998,8 @@
   }
 
   /**********************************************************
-    ***********************SECTION 3***************************
-    ***********************************************************/
+      ***********************SECTION 3***************************
+      ***********************************************************/
   .section-3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
