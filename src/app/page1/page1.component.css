@@ -226,7 +226,7 @@
   }
 
   .highlighted {
-    color: #38CCF5;
+    color: var(--orange-color);
   }
 
   .benefit {
@@ -473,7 +473,7 @@
   }
 
   .highlighted {
-    color: #38CCF5;
+    color: var(--orange-color);
   }
 
   .benefit {
