@@ -1,0 +1,261 @@
+.main {
+  color: #fff;
+}
+
+.top {
+  background: transparent linear-gradient(180deg,
+      #38CCF5 0%,
+      #3ECCF5 0%,
+      #42CCF5 16%,
+      #36C1EE 38%,
+      #119FD6 62%,
+      #2A97BF 81%,
+      #108ABF 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.box1,
+.box2,
+.box3 {
+  display: grid;
+  /* border: 1px solid red; */
+  justify-content: center;
+  padding: 8% 5%;
+}
+
+.bottom {
+  display: none;
+  background-color: #595957;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  /***********************************************************
+    **********************Top of Footer***********************
+    ************************************************************/
+  .top {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .quote-headline {
+    display: flex;
+    /* margin: 0 15%; */
+    gap: 2rem;
+  }
+
+  .quote-mark {
+    width: 40px;
+  }
+
+  .quote {
+    padding: 5%;
+    /* margin: 0 14%; */
+    font-size: 1rem;
+  }
+
+  .speaker {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .speaker-image-div {}
+
+  .speaker-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .speaker-info {
+    display: grid;
+    grid-gap: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .speaker-name {
+    font-weight: 700;
+  }
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  /***********************************************************
+    **********************Top of Footer***********************
+    ************************************************************/
+  .top {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .quote-headline {
+    display: flex;
+    /* margin: 0 15%; */
+    gap: 2rem;
+  }
+
+  .quote-mark {
+    width: 40px;
+  }
+
+  .quote {
+    padding: 5%;
+    /* margin: 0 14%; */
+    font-size: 1rem;
+  }
+
+  .speaker {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .speaker-image-div {}
+
+  .speaker-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .speaker-info {
+    display: grid;
+    grid-gap: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .speaker-name {
+    font-weight: 700;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  /***********************************************************
+    **********************Top of Footer***********************
+    ************************************************************/
+  .top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .quote-headline {
+    display: flex;
+    margin: 0 15%;
+    gap: 2rem;
+  }
+
+  .quote-mark {
+    width: 40px;
+  }
+
+  .quote {
+    padding: 5%;
+    margin: 0 14%;
+    font-size: 0.7rem;
+  }
+
+  .speaker {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speaker-image-div {}
+
+  .speaker-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .speaker-info {
+    display: grid;
+    grid-gap: 0;
+    font-size: 0.8rem;
+  }
+
+  .speaker-name {
+    font-weight: 700;
+  }
+
+
+  /*************************************************************
+  ****************Bottom of footer******************************
+  *************************************************************/
+
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 10vh;
+    font-size: 0.7rem;
+  }
+
+  .left {
+    display: grid;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+
+  .copy {
+    margin-left: 10%;
+  }
+
+  .right {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* border: 1px solid green; */
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+  }
+
+  nav a {
+    color: #fff;
+  }
+
+  .social-icons {}
+
+  .fb-icon {
+    width: 7px;
+    margin: 0 5px;
+  }
+
+  .ig-icon {
+    width: 15px;
+    margin: 0 5px;
+  }
+
+  .twitter-icon {
+    width: 15px;
+    margin: 0 5px;
+  }
+
+  .social-icons {
+    /* width: 20px; */
+    min-width: 20px;
+    max-width: 20px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

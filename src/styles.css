@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  --brand-color: #9BE5FA;
+  --orange-color: #FF6E4E;
+  --blue-color: #008CC9;
+}
+
+a {
+  text-decoration: none;
+}
