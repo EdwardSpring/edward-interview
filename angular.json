@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "edward-interview"
+  "defaultProject": "edward-interview",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
